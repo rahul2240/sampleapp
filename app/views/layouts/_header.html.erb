@@ -9,8 +9,12 @@
       <li><a href="#">Page 2</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
+      <% if current_user!=nil %>
+      <li><%= link_to 'logout', destroy_user_session_path, method: :delete %></li>
+      <% else %>
       <li><%= link_to "<span class='glyphicon glyphicon-user'>SignUp</span>".html_safe, new_user_registration_path %></li>
       <li><%= link_to "<span class='glyphicon glyphicon-log-in'>Login</span>".html_safe, new_user_session_path %></li>
+      <% end %>
     </ul>
   </div>
 </nav>
