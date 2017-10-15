@@ -1,2 +1,29 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+th {
+  color: blue;
+  background-color: yellow;
+
+  height: 50px;
+  text-align: center;
+}
+table,tr,td,th {
+  border: 2px solid green;
+}
+
+td{
+  padding: 10px 10px;
+}
+table{
+  width: 100%;
+}
+#a{
+  width: 150px;
+}
+#b{
+  width: 200px;
+}
+#c{
+  width: 150px;
+}
